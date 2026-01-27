@@ -47,22 +47,6 @@ make clean
 
 ---
 
-## 🧹 Code Style & Linting
-
-This project uses [**Ruff**](https://docs.astral.sh/ruff/) for linting and formatting.
-
-Check code for issues:
-
-```sh
-ruff check .
-```
-
-Automatically fix common issues:
-
-```sh
-ruff check . --fix
-```
-
 ## 📧 Contact
 
 - Email: avl@projectapheleia.net
