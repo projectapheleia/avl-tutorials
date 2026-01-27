@@ -23,6 +23,14 @@ cd avl-tutorials
 source avl-tutorials.sh
 ```
 
+## Documentation
+
+Both Powerpoint presentations are available in the doc directory:
+
+* Setup - Details on how to install the tools / libraries required
+* Intro - Introduction to AVL. Key concepts and features
+* Tutorials - Details on the tutorials in this library
+
 ## 🏃 Tutorials
 
 To run a tutorial:
