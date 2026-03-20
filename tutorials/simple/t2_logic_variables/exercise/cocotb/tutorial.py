@@ -31,21 +31,21 @@ class Env(avl.Env):
 
         # TODO: Declare 32 bit variable "b"
 
-        # Increment on rising edge of clock
+        # Increment on falling edge of clock
         while True:
-            # TODO : Wait on rising edge of clock and assign to hdl.a
+            # TODO : Wait on falling edge of clock and assign to hdl.b
 
             # TODO : Randomize "b"
 
     async def task3_c(self):
 
-        # TODO: Declare 32 bit variable "b"
+        # TODO: Declare 16 bit variable "c"
 
         # TODO : Add 1-hot constraint to "c"
 
         # Increment on rising edge of clock
         while True:
-            # TODO : Wait on rising edge of clock and assign to hdl.a
+            # TODO : Wait on rising edge of clock and assign to hdl.c
 
             # TODO : Randomize "c"
 
