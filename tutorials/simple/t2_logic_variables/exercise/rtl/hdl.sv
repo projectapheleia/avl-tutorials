@@ -5,6 +5,6 @@ module hdl();
 
     logic [7:0]  a;
     logic [31:0] b;
-    logic [16:0] c;
+    logic [15:0] c;
 
 endmodule : hdl
