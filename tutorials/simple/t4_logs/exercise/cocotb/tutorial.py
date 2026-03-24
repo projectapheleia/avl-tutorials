@@ -43,13 +43,13 @@ class Env(avl.Env):
 
         self.A.a.value = 255
         self.A.b.value = 15
-        # TODO : print as info - should be 0xf and 15
+        # TODO : print as info - should be 0xff and 15
 
     async def task2(self):
 
         # TODO : Transpose
 
-        # TODO : print as info - should be 0xf and 15 horizontally
+        # TODO : print as info - should be 0xff and 15 horizontally
 
     async def task3(self):
 

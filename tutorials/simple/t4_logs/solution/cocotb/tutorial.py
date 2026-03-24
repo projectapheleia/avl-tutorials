@@ -67,6 +67,7 @@ class Env(avl.Env):
             self.hdl.b.value = self.A.b.value
 
             # TODO : Send to Trace
+            # NOTE: check t4_logs/exercise directory for the trace csv file
             self.port.write(copy.copy(self.A))
 
             # Randomize
