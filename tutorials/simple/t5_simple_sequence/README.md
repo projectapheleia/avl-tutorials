@@ -11,5 +11,8 @@ Using the [sequence documentation](https://avl-core.readthedocs.io/en/latest/met
 
     2. Connect the sequencer and driver
 
-    2. Update the class Sequence
+    3. Update the class Sequence
         a. Randomly generate 100 items
+
+    4. Update the run phase
+        a. Create and start the Sequence

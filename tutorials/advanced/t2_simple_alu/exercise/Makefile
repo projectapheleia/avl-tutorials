@@ -11,7 +11,7 @@ VERILOG_INCLUDE_DIRS +=
 COMPILE_ARGS         +=
 
 # COCOTB_TOPLEVEL is the name of the toplevel module in your Verilog or VHDL file
-COCOTB_TOPLEVEL      := alu
+COCOTB_TOPLEVEL      := simple_alu
 PYTHONPATH           := ./cocotb
 
 # MODULE is the basename of the Python test file(s)

@@ -2,7 +2,7 @@
 
 Using the [structs documentation](https://avl-core.readthedocs.io/en/latest/variables/structs.html) and [z3 documentation](https://avl-core.readthedocs.io/en/latest/constraints/z3.html) as reference:
 
-    0. Create an AVL representation of the structs the rtl directory
+    0. Create an AVL representation of the structs in the rtl directory
         a. Variables must reset to 0
 
     1. Create a struct_t and assign to variable a

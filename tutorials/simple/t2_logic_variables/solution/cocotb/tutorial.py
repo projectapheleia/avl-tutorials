@@ -36,9 +36,9 @@ class Env(avl.Env):
         # TODO: Declare 32 bit variable "b"
         self.b = avl.Logic(0, width=32)
 
-        # Increment on rising edge of clock
+        # Increment on falling edge of clock
         while True:
-            # TODO : Wait on rising edge of clock and assign to hdl.a
+            # TODO : Wait on falling edge of clock and assign to hdl.b
             await FallingEdge(self.hdl.clk)
             self.hdl.b.value = self.b.value
 
@@ -47,7 +47,7 @@ class Env(avl.Env):
 
     async def task3_c(self):
 
-        # TODO: Declare 32 bit variable "b"
+        # TODO: Declare 16 bit variable "c"
         self.c = avl.Logic(0, width=16)
 
         # TODO : Add 1-hot constraint to "c"
@@ -61,7 +61,7 @@ class Env(avl.Env):
 
         # Increment on rising edge of clock
         while True:
-            # TODO : Wait on rising edge of clock and assign to hdl.a
+            # TODO : Wait on rising edge of clock and assign to hdl.c
             await RisingEdge(self.hdl.clk)
             self.hdl.c.value = self.c.value
 

@@ -8,6 +8,7 @@ import avl
 import cocotb
 from cocotb.triggers import Timer, RisingEdge, FallingEdge
 from z3 import *
+import random
 
 # TODO : Create the struct_t
 class struct_t(avl.Struct):
@@ -38,6 +39,9 @@ class Env(avl.Env):
             self.a.state_enum.randomize()
 
     async def task2(self):
+
+        # Optional constraint to distribute state_enum values more uniformly. Without this line, the solver almost always picks state_enum != S0 as it avoids the more restrictive path (multi_bit must be 0 versus multi_bit can be one of 2^32 values)
+        self.a.state_enum.add_constraint("c_distribute_state_enum", lambda x : x == random.choices([self.a.state_enum.S0, self.a.state_enum.S1, self.a.state_enum.S2], weights=[1, 1, 1], k=1)[0])
 
         # TODO : Add constraint a.state_enum == S0 -> a.multi_bit == 0
         self.add_constraint("c", lambda x,y : Implies(x == self.a.state_enum.S0, y == 0), self.a.state_enum, self.a.multi_bit)
